@@ -346,7 +346,7 @@ class Smsc {
     /**
      * Read response url
      * @param prs request params raw
-     * @param clb cllback function if need
+     * @param clb callback function if need
      * @param notConvert
      * @private
      */
