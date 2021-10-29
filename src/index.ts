@@ -144,7 +144,7 @@ export namespace smsc {
 /**
  * SMSC.RU API
  */
-class Smsc {
+export class Smsc {
     PHONE_TYPES = {
         "string" : 1,
         "number" : 2
