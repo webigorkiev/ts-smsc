@@ -1,0 +1,39 @@
+{
+  "name": "ts-smsc",
+  "version": "1.0.0",
+  "description": "Library smsc.ru for node.js",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": "https://github.com/webigorkiev/ts-smsc.git",
+  "author": "webigorkiev",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn docs && node scripts/build.js",
+    "test": "jest src -c jest.config.ts --silent false",
+    "lint": "eslint src/** --ignore-path ./.eslintignore",
+    "docs": "typedoc --includeVersion --excludePrivate --out docs src/index.ts"
+  },
+  "dependencies": {
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.5",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.29.1",
+    "esbuild": "^0.12.20",
+    "eslint": "^7.26.0",
+    "fs-extra": "^10.0.0",
+    "rollup": "^2.56.2",
+    "rollup-plugin-dts": "^3.0.2",
+    "rollup-plugin-esbuild": "^4.5.0",
+    "ts-loader": "^9.2.2",
+    "typedoc": "^0.21.5",
+    "typescript": "^4.3.2",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.0"
+  }
+}

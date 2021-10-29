@@ -1,0 +1,10 @@
+node_modules
+/dist
+
+# Log files
+
+# Coverage files
+
+# Editor directories and files
+.idea
+.vscode
