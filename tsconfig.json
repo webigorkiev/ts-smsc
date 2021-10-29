@@ -13,13 +13,22 @@
     "suppressImplicitAnyIndexErrors": true,
     "noImplicitThis": false,
     "declaration": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": false,
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "types": [
+      "@types/jest",
+      "node"
+    ]
   },
   "include": [
     "./src/*"

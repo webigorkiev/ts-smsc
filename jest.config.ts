@@ -17,9 +17,10 @@ const config: Config.InitialOptions = {
     globals: {
         'ts-jest': {
             tsconfig: './tsconfig.json'
-        }
+        },
     },
     testEnvironment: "node",
+    modulePathIgnorePatterns: ["<rootDir>/dist"],
 };
 
 export default config;
