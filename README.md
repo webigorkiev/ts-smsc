@@ -13,7 +13,7 @@ https://webigorkiev.github.io/ts-smsc/
 npm i ts-smsc
 ```
 
-##Usage
+## Usage
 
 ```typescript
 
