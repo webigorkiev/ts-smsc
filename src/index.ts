@@ -74,7 +74,10 @@ export namespace smsc {
          * Client password
          * password or sha1 password`s hash
          */
-        password: string,
+        password?: string,
+
+        // Password that not converted to sha1
+        pwd?: string,
 
         /**
          * Need use ssl
@@ -164,9 +167,15 @@ export class Smsc {
      */
     constructor(prs: smsc.ConfigureOptions) {
         this.login = prs.login;
-        this.password = prs.password.length === 40
-            ? prs.password
-            : (this.constructor as typeof Smsc).sha1(prs.password);
+
+        if(prs.password) {
+            this.password = prs.password.length === 40
+                ? prs.password
+                : (this.constructor as typeof Smsc).sha1(prs.password);
+        }
+        if(prs.pwd) {
+            this.password = prs.pwd;
+        }
         this.sender = prs.sender;
         this.ssl = !!prs.ssl;
         this.charset = prs.charset || "utf-8";
