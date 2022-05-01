@@ -95,7 +95,13 @@ export namespace smsc {
          * English letters, numbers, space and some symbols are allowed.
          * Length - 11 characters or 15 digits
          */
-        sender?: string
+        sender?: string,
+
+        // Api host
+        host?: string,
+
+        // Used prefixes of domes
+        prefixes?: string[]
 
     }
 
@@ -148,18 +154,19 @@ export namespace smsc {
  * SMSC.RU API
  */
 export class Smsc {
-    PHONE_TYPES = {
+    private PHONE_TYPES = {
         "string" : 1,
         "number" : 2
     };
 
-    host = "smsc.ru";
-    defFmt = 3;
-    ssl:boolean = false;
-    login: string;
-    password: string;
-    charset: BufferEncoding;
-    sender?: string;
+    private host = "smsc.ua";
+    private prefixes = ["www", "www3"];
+    private defFmt = 3;
+    private ssl:boolean = false;
+    private login: string;
+    private password: string;
+    private charset: BufferEncoding;
+    private sender?: string;
 
     /**
      * Set configuration
@@ -179,6 +186,8 @@ export class Smsc {
         this.sender = prs.sender;
         this.ssl = !!prs.ssl;
         this.charset = prs.charset || "utf-8";
+        this.host = prs.host || this.host;
+        this.prefixes = prs.prefixes || this.prefixes;
     }
 
     /**
@@ -395,16 +404,13 @@ export class Smsc {
             }
         }
 
-        let www = "";
-        let count = 0;
-        const submit = () => {
+        const prefixes = [...this.prefixes];
+        const submit = (www: string) => {
             fd.submit(this.getHost(www) + prs.file,  (err, res) => {
-
                 if(err) {
-
-                    if(count++ < 5) {
-                        www = "www"+ (count !== 1 ? count : "")+".";
-                        submit();
+                    const www = prefixes.shift();
+                    if(www) {
+                        submit(www);
                     } else {
                         const error = {
                             error : "Server Not Work",
@@ -433,7 +439,7 @@ export class Smsc {
             });
         };
 
-        submit();
+        submit(prefixes.shift() as string);
     }
 }
 

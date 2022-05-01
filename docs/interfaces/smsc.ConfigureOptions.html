@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ConfigureOptions | ts-smsc - v1.0.4</title>
-	<meta name="description" content="Documentation for ts-smsc - v1.0.4">
+	<title>ConfigureOptions | ts-smsc - v1.0.5</title>
+	<meta name="description" content="Documentation for ts-smsc - v1.0.5">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">ts-smsc - v1.0.4</a>
+					<a href="../index.html" class="title">ts-smsc - v1.0.5</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -52,7 +52,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">ts-smsc - v1.0.4</a>
+					<a href="../modules.html">ts-smsc - v1.0.5</a>
 				</li>
 				<li>
 					<a href="../modules/smsc.html">smsc</a>
@@ -91,8 +91,10 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="smsc.ConfigureOptions.html#charset" class="tsd-kind-icon">charset</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="smsc.ConfigureOptions.html#host" class="tsd-kind-icon">host</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="smsc.ConfigureOptions.html#login" class="tsd-kind-icon">login</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="smsc.ConfigureOptions.html#password" class="tsd-kind-icon">password</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="smsc.ConfigureOptions.html#prefixes" class="tsd-kind-icon">prefixes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="smsc.ConfigureOptions.html#pwd" class="tsd-kind-icon">pwd</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="smsc.ConfigureOptions.html#sender" class="tsd-kind-icon">sender</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="smsc.ConfigureOptions.html#ssl" class="tsd-kind-icon">ssl</a></li>
@@ -109,7 +111,7 @@
 					<div class="tsd-signature tsd-kind-icon">charset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">BufferEncoding</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/154a14f/src/index.ts#L91">index.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/93af787/src/index.ts#L91">index.ts:91</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -120,12 +122,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="host" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> host</h3>
+					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/93af787/src/index.ts#L101">index.ts:101</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="login" class="tsd-anchor"></a>
 					<h3>login</h3>
 					<div class="tsd-signature tsd-kind-icon">login<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/154a14f/src/index.ts#L71">index.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/93af787/src/index.ts#L71">index.ts:71</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -140,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/154a14f/src/index.ts#L77">index.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/93af787/src/index.ts#L77">index.ts:77</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -151,12 +163,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="prefixes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prefixes</h3>
+					<div class="tsd-signature tsd-kind-icon">prefixes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/93af787/src/index.ts#L104">index.ts:104</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="pwd" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> pwd</h3>
 					<div class="tsd-signature tsd-kind-icon">pwd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/154a14f/src/index.ts#L80">index.ts:80</a></li>
+							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/93af787/src/index.ts#L80">index.ts:80</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">sender<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/154a14f/src/index.ts#L98">index.ts:98</a></li>
+							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/93af787/src/index.ts#L98">index.ts:98</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -183,7 +205,7 @@
 					<div class="tsd-signature tsd-kind-icon">ssl<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/154a14f/src/index.ts#L85">index.ts:85</a></li>
+							<li>Defined in <a href="https://github.com/webigorkiev/ts-smsc/blob/93af787/src/index.ts#L85">index.ts:85</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -216,10 +238,16 @@
 								<a href="smsc.ConfigureOptions.html#charset" class="tsd-kind-icon">charset</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="smsc.ConfigureOptions.html#host" class="tsd-kind-icon">host</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="smsc.ConfigureOptions.html#login" class="tsd-kind-icon">login</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="smsc.ConfigureOptions.html#password" class="tsd-kind-icon">password</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="smsc.ConfigureOptions.html#prefixes" class="tsd-kind-icon">prefixes</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="smsc.ConfigureOptions.html#pwd" class="tsd-kind-icon">pwd</a>
@@ -254,7 +282,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
