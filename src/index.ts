@@ -160,7 +160,7 @@ export class Smsc {
     };
 
     private host = "smsc.ua";
-    private prefixes = ["www", "www3"];
+    private prefixes = ["www.", "www3."];
     private defFmt = 3;
     private ssl:boolean = false;
     private login: string;
